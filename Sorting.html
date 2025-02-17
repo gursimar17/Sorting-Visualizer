@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="icon" href="image/logo_br_remove.png" type="image" />
+  </head>
+  <body>
+    <div id="header">
+      <img class="logo" src="image/logo_br_remove.png" />
+      <ul>
+        <li>
+          <a href="home.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Contact </a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+      <a href="Home.html" class="a-tag" style="text-decoration: none">
+        <button class="getStarted">
+          Go Back
+          <div class="arrow-wrapper">
+            <div class="arrow"></div>
+          </div>
+        </button>
+      </a>
+    </div>
+
+    <div class="main">
+      <div class="left-sec">
+        <div class="display-sec" id="display-sec">
+          <p class="display-fill">Click Generate to Get New Array</p>
+        </div>
+        <div class="sorted-gradient" id="sortedGradient"></div>
+        <div class="settings-sec">
+          <p class="secondary-txt" style="margin-right: 0px; font-size: 12px">
+            Speed :
+          </p>
+          <div class="range">
+            <input type="range" min="0" max="100" id="speed" />
+          </div>
+          <p class="secondary-txt" style="margin-right: 0px; font-size: 12px">
+            Array Size :
+          </p>
+          <div class="range" style="margin-left: px">
+            <input type="range" min="0" max="100" id="arraySize" value="25" />
+          </div>
+          <button class="tst-btn" id="generateButton">
+            <span>Generate</span>
+          </button>
+          <button class="tst-btn" id="resetButton">
+            <span>Reset</span>
+          </button>
+          <button class="tst-btn" id="stopButton">
+            <span>Stop </span>
+          </button>
+        </div>
+      </div>
+      <div class="right-sec">
+        <p class="right-title">Select sorting Algorithm</p>
+        <div class="right-sec-grid">
+          <button class="tst-btn" id="selectionSort">
+            <span>Selection Sort</span>
+          </button>
+          <button class="tst-btn" id="bubbleSort">
+            <span>Bubble Sort</span>
+          </button>
+          <button class="tst-btn" id="insertionSort">
+            <span>Insertion Sort</span>
+          </button>
+          <button class="tst-btn" id="mergeSort">
+            <span>Quick Sort</span>
+          </button>
+        </div>
+        <div class="color-selectors">
+          <div class="color">
+            <p class="secondary-txt">Select Color of Bars:</p>
+            <div id="swatch">
+              <input type="color" id="color1" name="color" value="#3498db" />
+              <div class="info">
+                <h1>Input</h1>
+                <h2 id="colorHex1">#3498db</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="color">
+            <p class="secondary-txt">Select Color of Sorting Bar :</p>
+            <div style="display: flex; flex-direction: row">
+              <div id="swatch" style="margin-right: 8px">
+                <input type="color" id="color2" name="color" value="#e2ecf3" />
+                <div class="info">
+                  <h1>Input</h1>
+                  <h2 id="colorHex2">#e2ecf3</h2>
+                </div>
+              </div>
+              <div id="swatch">
+                <!-- Added missing div here -->
+                <input type="color" id="color3" name="color" value="#db3366" />
+                <!-- Changed the ID to "color3" -->
+                <div class="info">
+                  <h1>Input</h1>
+                  <h2 id="colorHex3">#db3366</h2>
+                  <!-- Changed the ID to "colorHex3" -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
